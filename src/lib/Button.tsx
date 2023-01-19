@@ -3,17 +3,23 @@ import styled from 'styled-components';
 const Button = styled.button`
   border: none;
   border-radius: 0.6rem;
-  background-color: #186faf;
-  color: hsl(0deg, 0%, 98%);
-  padding: 0.75rem;
+  min-width: 13rem;
+  height: 3.2rem;
+  background-color: #0075EA;
+  color: #FFF;
+  padding: 1.2rem 2.4rem;
   cursor: pointer;
   &:hover {
-    background-color: #0a558c;
+    background-color: #005CB8;
   }
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 2px #62b0e8;
-    background-color: #0a558c;
+    box-shadow: 0px 4px 8px rgba(49, 49, 49, 0.15);
+    background-color: #005CB8;
+  }
+  &:disabled {
+    background-color: #E0DEEA;
+    cursor: not-allowed;
   }
 `;
 
